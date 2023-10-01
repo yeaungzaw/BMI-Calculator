@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container" id="app">
+
+        <div class="bmi">
+
+            <h1>BMI Calculator</h1>
+
+            <div class="weight">
+                <div class="label-and-select">
+                    <label for="weightInput">Weight</label>
+                    <select name="" id="weightUnitInput">
+                        <option value="kg">kg</option>
+                        <option value="lb">lb</option>
+                    </select>
+                </div>
+                <input id="weightInput" type="number">
+            </div>
+
+            <div class="height">
+                <div class="label-and-select">
+                    <label for="heightInput">Height</label>
+                    <select name="" id="heightUnitInput">
+                        <option value="cm">cm</option>
+                        <option value="ft">ft</option>
+                    </select>
+                </div>
+                <input id="heightInput" type="string">
+            </div>
+
+            <button class="btn" id="calcBtn">Calculate</button>
+
+            <div class="result-and-note">
+                <div class="result">
+                    <h2>Your BMI is</h2>
+                    <h1 id="output">0</h1>
+                </div>
+                <p id="note"></p>
+            </div>
+
+
+            <ul class="bmi-scale">
+                <li>
+                    <h4 class="underweight">Underweight</h4>
+                    <p>&lt; 18.5</p>
+                </li>
+                <li>
+                    <h4 class="normal">Normal</h4>
+                    <p>18.5 - 25</p>
+                </li>
+                <li>
+                    <h4 class="overweight">Overweight</h4>
+                    <p>25 - 30</p>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
