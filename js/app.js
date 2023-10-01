@@ -30,7 +30,7 @@ const calcBmi = (w, h, unit1, unit2) => {
         w.value = lbToKg(w.valueAsNumber);
     }
 
-    if (unit2.value === 'ft') {
+    if ((unit2.value === 'ft') || (h.value.includes("'"))) {
         h.value = feetToCentimeter(h.value);
     }
 
