@@ -35,11 +35,11 @@ const calcBmi = (w, h, unit1, unit2) => {
     }
 
     if (!
-        (((w.value === '') && (h.value === '')) 
+        (((w.value === '') || (h.value === '')) 
         || 
-        ((w.value === '0') && (h.value === '0')))
+        ((w.value === '0') || (h.value === '0')))
         ) {        
-        const result = w.value / ((h.value / 100) ** 2);
+        const result = w.valueAsNumber / ((h.valueAsNumber / 100) ** 2);
         output.innerText = result.toFixed(2);
         checkBmi();
     }
