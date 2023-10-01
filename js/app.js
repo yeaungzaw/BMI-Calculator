@@ -39,7 +39,7 @@ const calcBmi = (w, h, unit1, unit2) => {
         || 
         ((w.value === '0') || (h.value === '0')))
         ) {        
-        const result = w.valueAsNumber / ((h.valueAsNumber / 100) ** 2);
+        const result = w.value / ((h.value / 100) ** 2);
         output.innerText = result.toFixed(2);
         checkBmi();
     }
